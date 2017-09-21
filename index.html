@@ -12,20 +12,18 @@
   <script src="bower_components/html5-boilerplate/dist/js/vendor/modernizr-2.8.3.min.js"></script>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.jgrowl.js"></script>
-  <script type="text/javascript" src="js/jquery.arcticmodal.js"></script>
-  <script type="text/javascript" src="js/feedback.js"></script>
+  <script src="feedback/js/feedback.js"></script>
+  <script src="feedback/js/jquery.arcticmodal.js"></script>
+  <script src="feedback/js/jquery.jgrowl.js"></script>
   <script type="text/javascript">
-      $(document).ready(function() {
-          $(document).on('click', '.modal_btn', function(){
+      $(document).ready(function () {
+          $(document).on('click', '.modal_btn', function () {
               $('#small-modal').arcticmodal();
           });
       });
   </script>
-  <link href="css/jquery.jgrowl.css" rel="stylesheet" type="text/css">
-  <link href="css/jquery.arcticmodal.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="feedback/css/jquery.arcticmodal.css">
+  <link rel="stylesheet" type="text/css" href="feedback/css/jquery.jgrowl.css">
 </head>
 <body>
 
