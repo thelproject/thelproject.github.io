@@ -1,5 +1,6 @@
 <?php
 
+
 $act = isset($_REQUEST['act']) ? $_REQUEST['act'] : die('error');
 $params = isset($_REQUEST['json']) ? json_decode($_REQUEST['json'], true) : array();
 $jsonBox = array();
@@ -67,7 +68,7 @@ $form['form-2'] = array(
 			'title' => 'Имя',
 			'validate' => array(
 				'preg' => '%[A-Z-a-zА-Яа-я\s]%',
-				'minlength' => '3',
+				'minlength' => '2',
 				'maxlength' => '35',
 			),
 			'messages' => array(
@@ -80,7 +81,7 @@ $form['form-2'] = array(
 			'title' => 'Телефон',
 			'validate' => array(
 				'preg' => "/^((8|\+)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{5,10}$/",
-				'minlength' => '5',
+				'minlength' => '7',
 			),
 			'messages' => array(
 				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
@@ -91,7 +92,7 @@ $form['form-2'] = array(
 			'title' => 'E-mail',
 			'validate' => array(
 				'preg' => '%@%is',
-				'minlength' => '5',
+				'minlength' => '2',
 			),
 			'messages' => array(
 				'preg' => 'Поле [ %1$s ] возможно содержит ошибку',
@@ -113,22 +114,22 @@ $form['form-2'] = array(
 	),
 	'cfg' => array(
 		'charset' => 'utf-8',
-		'subject' => 'Тема письма',
-		'title' => 'Заголовок в теле письма',
+		'subject' => 'Письмо от клиента',
+		'title' => 'Сообщение',
 		'ajax' => true,
 		'validate' => true,
 		'from_email' => 'noreply@email.com',
-		'from_name' => 'noreply',
-		'to_email' => 'noreply1@email.com, noreply2@email.com',
-		'to_name' => 'noreply1, noreply2',
+		'from_name' => 'MAIL',
+		'to_email' => 'yuliapodlipko@gmail.com',
+		'to_name' => 'Yulia',
 		'geoip' => true,
 		'referer' => true,
 		'type' => 'html',
 		'tpl' => true,
 		'antispam' => 'email77',
 		'antispamjs' => 'address77',
-		'okay' => 'Сообщение отправлено - OK',
-		'fuck' => 'Сообщение отправлено - ERROR',
+		'okay' => 'Сообщение отправлено',
+		'fuck' => 'Сообщение не отправлено - ERROR',
 		'spam' => 'Cпам робот',
 		'notify' => 'color-modal-textbox',
 		'usepresuf' => false
