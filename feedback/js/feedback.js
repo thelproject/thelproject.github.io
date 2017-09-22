@@ -29,13 +29,13 @@ window.isset = function (v) {
         }
     }
     return true;
-}
+};
 
 function myconf() {
     var cf = $.Deferred();
         $.ajax({
             type: 'POST',
-            url: 'feedback/',
+            url: 'feedback/feedback',
             dataType: 'json',
             data: 'act=cfg',
             success: function(answer) {
@@ -78,7 +78,7 @@ function feedback(vars) {
 
     $.ajax({
         type: 'POST',
-        url: 'feedback/',
+        url: 'feedback/feedback',
         cache: false,
         dataType: 'json',
         data: 'act=' + vars.act + '&' + vars.data,
