@@ -35,7 +35,7 @@ function myconf() {
     var cf = $.Deferred();
         $.ajax({
             type: 'POST',
-            url: '/feedback/',
+            url: './feedback/',
             dataType: 'json',
             data: 'act=cfg',
             success: function(answer) {
@@ -78,7 +78,7 @@ function feedback(vars) {
 
     $.ajax({
         type: 'POST',
-        url: '/feedback/',
+        url: './feedback/',
         cache: false,
         dataType: 'json',
         data: 'act=' + vars.act + '&' + vars.data,
