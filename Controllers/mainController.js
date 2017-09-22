@@ -1,4 +1,4 @@
-var app = angular.module('myApp');
+var app = angular.module('designApp');
 
 app.controller('mainController', function ($scope, calculatorConstant, packagesFactory) {
     var flag_bg_1=true;
