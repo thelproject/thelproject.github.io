@@ -109,17 +109,19 @@ header .header_quote_container {
 }
 
 header .header_quote {
-  padding: 20px;
-  text-align: center;
-  color: white;
-  font-style: italic;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 20px;
-  letter-spacing: 0;
+  padding: 30px;
+  max-width: 570px;
+  background-color: rgba(100,100,100,.57);
 }
 
-header .header_quote p {
+header .header_quote h1 {
+  text-align: center;
+  color: white;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 26px;
+  letter-spacing: 0;
   margin: 0;
 }
 
