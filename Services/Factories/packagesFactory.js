@@ -1,16 +1,16 @@
-var app = angular.module('myApp');
+var app = angular.module('designApp');
 
 app.factory('packagesFactory', function () {
 
     function basic(items) {
-       items.forEach(function (item) {
-          if(item.id === 5 || item.id === 7 || item.id === 11 || item.id === 15 || item.id === 17 || item.id === 18 || item.id === 20 || item.id === 21 || item.id === 22 || item.id === 23){
-              item.selected = false;
-          } else {
-              item.selected = true;
-          }
-       });
-       return items;
+        items.forEach(function (item) {
+            if(item.id === 5 || item.id === 7 || item.id === 11 || item.id === 15 || item.id === 17 || item.id === 18 || item.id === 20 || item.id === 21 || item.id === 22 || item.id === 23){
+                item.selected = false;
+            } else {
+                item.selected = true;
+            }
+        });
+        return items;
     }
 
     function standard(items) {
@@ -26,7 +26,7 @@ app.factory('packagesFactory', function () {
 
     function complex(items) {
         items.forEach(function (item) {
-                item.selected = true;
+            item.selected = true;
         });
         return items;
     }
@@ -44,5 +44,6 @@ app.factory('packagesFactory', function () {
         createStandard: standard,
         createComplex: complex,
         createClear: clear
-   }
+    }
 });
+

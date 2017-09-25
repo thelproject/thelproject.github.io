@@ -29,7 +29,7 @@ window.isset = function (v) {
         }
     }
     return true;
-};
+}
 
 function myconf() {
     var cf = $.Deferred();

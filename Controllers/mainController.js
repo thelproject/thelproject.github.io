@@ -1,4 +1,4 @@
-var app = angular.module('myApp');
+var app = angular.module('designApp');
 
 app.controller('mainController', function ($scope, calculatorConstant, packagesFactory) {
     var flag_bg_1=true;
@@ -113,7 +113,7 @@ app.controller('mainController', function ($scope, calculatorConstant, packagesF
 
 
 
- // калькулятор
+    // калькулятор
     $scope.area = 0;
     $scope.allPackagesItems = calculatorConstant.packages_items;
 
@@ -149,6 +149,7 @@ app.controller('mainController', function ($scope, calculatorConstant, packagesF
     };
 
 
+
 //адаптивное меню
 
 
@@ -181,22 +182,5 @@ app.controller('mainController', function ($scope, calculatorConstant, packagesF
         }
     });
 
-
-
-
-
-
-
-
-    // $(function(){
-    //     $(document).click(function(event) {
-    //         if ($(event.target).closest(".nav_wrapper").length) return;
-    //         else {
-    //             $("#menu").hide();
-    //             event.stopPropagation();
-    //         }
-    //     });
-    // });
-
-
 });
+

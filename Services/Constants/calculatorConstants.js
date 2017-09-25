@@ -1,4 +1,4 @@
-var app = angular.module('myApp');
+var app = angular.module('designApp');
 
 app.constant('calculatorConstant', {
     'packages_items': [
