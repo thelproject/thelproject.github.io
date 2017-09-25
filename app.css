@@ -111,7 +111,7 @@ header .header_quote_container {
 header .header_quote {
   padding: 30px;
   max-width: 570px;
-  background-color: rgba(100,100,100,.57);
+  background-color: rgba(80,80,80,.57);
 }
 
 header .header_quote h1 {
@@ -446,8 +446,13 @@ input.area_input {
   margin: 20px;
 }
 
+.uk-overlay-default {
+  background: rgba(10,10,10,.3);
+}
 
-
+.uk-h4 {
+  color: white;
+}
 
 .totopBtn {
   position: absolute;
