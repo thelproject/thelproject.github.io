@@ -588,6 +588,14 @@ footer .inst:hover {
   text-align: center;
 }
 
+.uk-lightbox-toolbar {
+  background: rgba(0,0,0,0);
+}
+
+.uk-light .uk-slidenav {
+  color: rgba(255,255,255,.4);
+}
+
 .menu_Btn, #menu, .small_logo_footer {
   display: none;
 }
@@ -1271,3 +1279,7 @@ footer .inst:hover {
     height: 2600px;
   }
 }
+
+
+
+
