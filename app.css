@@ -102,6 +102,7 @@ header .logo a{
 .slider_bg .bg_3 {
   background-image: url('images/bg_images/bg_image3.jpg');
   opacity: 0;
+  background-position: right;
 }
 
 header .header_quote_container {
